@@ -9,8 +9,8 @@ class LettersCalculator extends Component {
     letterCount: 0, // To store the count of letters
   }
 
-  handleInputChange = e => {
-    const value = e.target.value
+  handleInputChange = event => {
+    const value = event.target.value
     this.setState({inputValue: value})
   }
 
@@ -31,9 +31,12 @@ class LettersCalculator extends Component {
         />
         <h1 className="heading">Calculate the Letter you enter</h1>
 
-        <label className="title">Enter your name </label>
+        <label className="title " htmlFor="inputName">
+          Enter your name
+        </label>
         <input
           type="text"
+          id="inputName"
           placeholder="Enter the Number"
           className="placeholder"
           value={inputValue}
