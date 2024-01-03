@@ -10,7 +10,7 @@ class LettersCalculator extends Component {
   }
 
   handleInputChange = event => {
-    const value = event.target.value
+    const value = event.target
     this.setState({inputValue: value})
   }
 
